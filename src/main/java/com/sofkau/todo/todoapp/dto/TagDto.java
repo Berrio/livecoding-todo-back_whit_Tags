@@ -7,5 +7,5 @@ public class TagDto {
 
     private Long id;
     private String tag;
-    private String noteId;
+    private Long noteId;
 }
