@@ -42,7 +42,7 @@ public class Controller {
     }
 
     @PostMapping("save/tag")
-    public TagDto saveCategory(@RequestBody TagDto tagDto) {
+    public TagDto saveTag (@RequestBody TagDto tagDto) {
         return tagService.createTag(tagDto);
     }
 
