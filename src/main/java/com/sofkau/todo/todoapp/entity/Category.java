@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "Category")
-@Table(name= "category")
+@Table(name = "category")
 @Data
 public class Category {
 
@@ -19,6 +19,6 @@ public class Category {
     private String title;
 
     @OneToMany(mappedBy = "categoryId",
-    fetch = FetchType.EAGER)
+            fetch = FetchType.EAGER)
     private List<Note> notes = new ArrayList<>();
 }

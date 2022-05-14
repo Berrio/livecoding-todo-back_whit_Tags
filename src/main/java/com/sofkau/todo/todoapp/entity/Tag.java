@@ -1,12 +1,13 @@
 package com.sofkau.todo.todoapp.entity;
 
 import lombok.Data;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "Tag")
-@Table(name= "tag")
+@Table(name = "tag")
 @Data
 public class Tag {
 
@@ -14,7 +15,7 @@ public class Tag {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String tag;
-    private String noteId;
+    private Long noteId;
 
 
 }

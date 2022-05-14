@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class CategoryServiceImpl implements CategoryService{
+public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryRepository categoryRepository;
@@ -38,7 +38,7 @@ public class CategoryServiceImpl implements CategoryService{
     @Override
     public void deleteCategory(Long id) {
         List<Note> notes = noteRepository.findByCategoryId(id);
-        if(notes.size() > 0){
+        if (notes.size() > 0) {
             notes.forEach(notesToDelete -> noteRepository.deleteById(notesToDelete.getId()));
         }
         categoryRepository.deleteById(id);

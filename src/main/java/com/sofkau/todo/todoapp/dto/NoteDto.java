@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-public class NoteDto{
+public class NoteDto {
 
     private Long id;
     private String message;
